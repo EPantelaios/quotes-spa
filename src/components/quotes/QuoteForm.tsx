@@ -15,10 +15,8 @@ const QuoteForm = (props: Props) => {
 
   function submitFormHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     const enteredAuthor = authorInputRef.current?.value;
     const enteredText = textInputRef.current?.value;
-
     props.onAddQuote({ author: enteredAuthor || '', text: enteredText || '' });
   }
 
@@ -30,7 +28,6 @@ const QuoteForm = (props: Props) => {
             <LoadingSpinner />
           </div>
         )}
-
         <div className={classes.control}>
           <label htmlFor="author">Author</label>
           <input type="text" id="author" ref={authorInputRef} />
