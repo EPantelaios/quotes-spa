@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
 import QuoteItem from './QuoteItem';
@@ -36,7 +35,7 @@ const QuoteList = (props: Props) => {
   };
 
   return (
-    <Fragment>
+    <>
       <div className={classes.sorting}>
         <button onClick={changeSortingHandler}>
           Sort {isSortingAscending ? 'Descending' : 'Ascending'}
@@ -54,7 +53,7 @@ const QuoteList = (props: Props) => {
           )
         )}
       </ul>
-    </Fragment>
+    </>
   );
 };
 
