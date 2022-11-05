@@ -13,12 +13,17 @@
 }
 
 .control {
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 3rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .control label {
   font-weight: bold;
   display: block;
+  margin-right: auto;
   margin-bottom: 0.5rem;
 }
 
@@ -46,4 +51,9 @@
 
 .actions button {
   font-size: 1.25rem;
+}
+
+.invalid p {
+  color: #aa0b20;
+  text-align: center;
 }
