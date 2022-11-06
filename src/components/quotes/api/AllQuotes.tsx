@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-import NoQuotesFound from '../components/quotes/NoQuotesFound';
-import QuoteList from '../components/quotes/QuoteList';
-import LoadingSpinner from '../components/UI/LoadingSpinner';
-import useHttp from '../hooks/use-http';
-import { getAllQuotes } from '../lib/api';
+import QuoteList from '../../../components/quotes/QuoteList';
+import LoadingSpinner from '../../../components/UI/LoadingSpinner';
+import useHttp from '../../../hooks/use-http';
+import { getAllQuotes } from '../../../lib/api';
+import NoQuotesFound from '../../quotes/NoQuotesFound';
 
 const AllQuotes = () => {
   const {

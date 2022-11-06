@@ -2,11 +2,12 @@ import { useEffect } from 'react';
 
 import { useParams, Route, Link, useRouteMatch } from 'react-router-dom';
 
-import Comments from '../components/comments/Comments';
-import HighlightedQuote from '../components/quotes/HighlightedQuote';
-import LoadingSpinner from '../components/UI/LoadingSpinner';
-import useHttp from '../hooks/use-http';
-import { getSingleQuote } from '../lib/api';
+import useHttp from '../../../hooks/use-http';
+import { getSingleQuote } from '../../../lib/api';
+import Comments from '../../comments/Comments';
+import LoadingSpinner from '../../UI/LoadingSpinner';
+import HighlightedQuote from '../HighlightedQuote';
+import NoQuotesFound from '../NoQuotesFound';
 
 const QuoteDetail = () => {
   const match = useRouteMatch();
@@ -38,7 +39,7 @@ const QuoteDetail = () => {
   }
 
   if (!loadedQuote.text) {
-    return <p>No quote found!</p>;
+    return <NoQuotesFound />;
   }
 
   return (
