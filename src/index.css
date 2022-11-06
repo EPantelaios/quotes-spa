@@ -31,12 +31,6 @@ body {
   color: white;
 }
 
-.pageNotFound {
-  font-size: 3rem;
-  font-weight: bold;
-  color: teal;
-}
-
 .btn {
   text-decoration: none;
   background-color: teal;
