@@ -2,6 +2,8 @@
 
 #### The user can fetch and read the already existing quotes, as well as add comments to them. Also, the user can add new quotes to his collection
 
+#### The project is hosted [here](https://quotes.epantelaios.vercel.app/)
+
 #### `Instructions:`
 
 - #### `npm install`
